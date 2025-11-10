@@ -1,0 +1,78 @@
+{
+  "podcasts": [
+    {
+      "id": "tech-talks",
+      "title": "Tech Talks Daily",
+      "description": "Daily discussions with industry leaders on technology trends.",
+      "tags": ["technology", "ai", "software"],
+      "episodes": [
+        {
+          "id": "tt-ep-101",
+          "title": "AI Agents in Production",
+          "description": "We explore how autonomous agents are being deployed in real systems.",
+          "tags": ["ai", "agents", "production"],
+          "publishedAt": "2025-09-15",
+          "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        },
+        {
+          "id": "tt-ep-102",
+          "title": "Scaling Microservices",
+          "description": "Lessons learned from scaling microservices across multiple regions.",
+          "tags": ["microservices", "cloud", "devops"],
+          "publishedAt": "2025-08-10",
+          "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+        }
+      ]
+    },
+    {
+      "id": "health-bytes",
+      "title": "Health Bytes",
+      "description": "Concise episodes on wellness, fitness, and nutrition.",
+      "tags": ["health", "fitness", "nutrition"],
+      "episodes": [
+        {
+          "id": "hb-ep-201",
+          "title": "Sleep Science 101",
+          "description": "How sleep affects performance and mood.",
+          "tags": ["sleep", "wellness"],
+          "publishedAt": "2025-10-02",
+          "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+        },
+        {
+          "id": "hb-ep-202",
+          "title": "Plant-Based Diets",
+          "description": "Exploring plant-based nutrition myths and facts.",
+          "tags": ["nutrition", "diet"],
+          "publishedAt": "2025-07-21",
+          "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+        }
+      ]
+    },
+    {
+      "id": "business-banter",
+      "title": "Business Banter",
+      "description": "Strategies from founders and executives.",
+      "tags": ["business", "startups", "management"],
+      "episodes": [
+        {
+          "id": "bb-ep-301",
+          "title": "Fundraising in 2025",
+          "description": "What VCs are looking for this year.",
+          "tags": ["startups", "fundraising"],
+          "publishedAt": "2025-06-11",
+          "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+        },
+        {
+          "id": "bb-ep-302",
+          "title": "Hiring for Impact",
+          "description": "Building high-performing teams at early stage.",
+          "tags": ["hiring", "management"],
+          "publishedAt": "2025-05-03",
+          "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+        }
+      ]
+    }
+  ]
+}
+
+
