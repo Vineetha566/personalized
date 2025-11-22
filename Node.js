@@ -1,0 +1,64 @@
+node {
+    def mvnHome
+
+    stage('Preparation') {
+        git 'https://github.com/budarajumadhurika/samplescriptjava.git'
+        mvnHome = tool 'M3'
+    }
+
+    stage('Build') {
+        withEnv(["MVN_HOME=$mvnHome"]) {
+            bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+        }
+    }
+
+    stage('Results') {
+        junit '**/target/surefire-reports/TEST-*.xml'
+        archiveArtifacts 'target/*.jar'
+    }
+}
+
+
+
+
+minikube and nginx:
+minikube start
+kubectl create deployment mynginx --image=nginx
+kubectl set image deployment/mynginx nginx=nginx:latest
+kubectl get deployments
+kubectl get pods
+kubectl describe pods
+kubectl expose deployment mynginx --type=NodePort --port=80 --target-port=80
+kubectl scale deployment mynginx --replicas=4
+kubectl get service myngnix
+kubectl port-forward svc/mynginx 8081:80
+kubectl delete deployment mynginx
+kubectl delete service mynginx
+
+
+
+
+nagios:
+docker pull jasonrivers/nagios:latest
+docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+docker stop nagiosdemo
+docker rm nagiosdemo
+docker images
+docker rmi jasonrivers/nagios:latest
+
+dockerfile aws:
+# Use official Nginx image
+FROM nginx:latest
+# Copy your HTML file into the Nginx web directory
+COPY index.html /usr/share/nginx/html/index.html
+
+
+aws:
+aws:
+sudo apt update
+sudo apt-get install docker.io
+Sudo apt install nano
+git clone <copied http url>
+Nano Dockerfile
+sudo docker build –t mywebapp .
+sudo docker run –d –p 80:80 mywebapp
